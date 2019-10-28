@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from 'react-bootstrap'
 
 class Form extends React.Component{
     render(){
@@ -6,7 +7,7 @@ class Form extends React.Component{
             <form onSubmit = {this.props.getWeather}>
                 <input type='text' className = 'myInput' name = 'city' placeholder='City...' />
                 <input type='text' className = 'myInput' name = 'country' placeholder='Country...' />
-                <button className='myButton'>Get Weather</button>
+                <Button type = 'submit' variant = "success">Get Weather</Button>
             </form>
         )
     }
